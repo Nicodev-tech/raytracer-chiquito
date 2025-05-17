@@ -54,3 +54,4 @@ CMakeUserPresets.json
 
 #ignorar el build
 out/
+build/
