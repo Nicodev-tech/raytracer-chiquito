@@ -16,10 +16,10 @@ public:
 	double z() const { return e[2]; }
 
 	vec3 operator-() const {return vec3(-e[0], -e[1], -e[2]);}
-	double operator[](int j) const(return e[j];)
+	double operator[](int j) const{return e[j];}
 	double& operator[](int j) {return e[j];}
 
-	vec3& operator*=(doble t)
+	vec3& operator*=(double t)
 	{
 		e[0] *= t;
 		e[1] *= t;
@@ -49,7 +49,7 @@ public:
 //point3 is just an alias forr vec3m but useful for geometric clarity in the code.
 using point3 = vec3;
 
-inline std::onstream& operator<<(std::onstream& out, const vec3& v)
+inline std::ostream& operator<<(std::ostream& out, const vec3& v)
 {
 	return out << v.e[0] << ' ' << v.e[1] << ' ' << v.e[2];
 }
@@ -97,7 +97,7 @@ inline vec3 cross(const vec3& u, const vec3& v)
 				u.e[2] * v.e[0] - u.e[0] * v.e[2],
 				u.e[0] * v.e[1] - u.e[1] * v.e[0]);
 }
-inline vec unit_vector(const vec3& v)
+inline vec3 unit_vector(const vec3& v)
 {
 	return v / v.length();
 }
