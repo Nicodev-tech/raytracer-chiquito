@@ -46,7 +46,7 @@ public:
 
 };
 
-//point3 is just an alias forr vec3m but useful for geometric clarity in the code.
+//point3 is just an alias for vec3m but useful for geometric clarity in the code.
 using point3 = vec3;
 
 inline std::ostream& operator<<(std::ostream& out, const vec3& v)
