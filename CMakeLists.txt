@@ -12,6 +12,8 @@ set(SOURCE_ONE_WEEKEND
 	src/vec3.h
 	src/color.h
 	src/ray.h
+	src/hittable.h
+	src/sphere.h
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_ONE_WEEKEND})
