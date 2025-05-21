@@ -5,7 +5,7 @@ Un raytracer hecho en c++, es un proyecto para aprender como funcionan los algor
 Testeado unicamente en linux  
 `cmake -S . -B build/ && cmake --build build/ && build/RRIOW imagen.png`   
 ## Imagenes
-|Gradiente de muchos colores|Gradiente con lerp de celeste a blanco|Esfera de normales|
+|Gradiente de muchos colores|Gradiente con lerp de celeste a blanco|Esfera con normales calculados|
 |-------------------|--------------------|--------------------|
 |![](img/imagen.png)|![](img/imagen2.png)|![](img/esfera_normales.png)|
 ## TODO
